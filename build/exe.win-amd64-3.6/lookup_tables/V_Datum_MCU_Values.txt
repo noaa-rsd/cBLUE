@@ -1,0 +1,38 @@
+"Maine, New Hampshire, Massachusetts - Gulf of Maine"	13.4
+"New York/Connecticut/Rhode Island – Outer NY Bight, eastern Long Island Sound, Block Island Sound"	9.7
+New York - The Great South Bay	11.6
+"New Jersey/New York/Connecticut – Northern NJ, NY Harbor, western Long Island Sound"	9.4
+New Jersey - Coastal embayments	9.2
+Virginia/Maryland/Delaware/New Jersey - Mid-Atlantic Bight shelf	8.9
+Delaware - Delaware Bay	11.8
+Virginia/Maryland/Delaware - Coastal embayments	8.9
+Virginia/Maryland - Chesapeake Bay	9.2
+North Carolina – Inland waterways and sounds	8.7
+North Carolina – Coastal shelf	8.7
+Georgia/South Carolina – Sapelo Island GA to the SC/NC border	14.8
+"Florida/Georgia – Shelf, Fort Lauderdale FL to Sapelo Island GA"	9.3
+"Florida/Georgia – Inland water, Fort Lauderdale FL to Sapelo Is"	10
+"Florida – South Florida, Naples to Fort Lauderdale FL, and Florida Bay"	9.6
+Florida – South Florida Inland Waterways	9.4
+Florida – Anclote Key to Naples	13
+Florida – Apalachicola to Anclote Key	10.2
+Florida - St. Joseph Bay and the Gulf of Mexico	8.6
+Florida - St. Andrews Bay and the Gulf of Mexico	8
+"Florida - Perdido, Pensacola and Choctawhatchee Bays"	8.3
+Florida/Alabama - Gulf of Mexico from Mobile Bay to east of Choctawhatchee Bay	8.1
+Alabama - Mobile Bay and Perdido Bay	8.2
+Louisiana/Mississippi - Eastern Louisiana to Mississippi Sound	17.1
+Louisiana/Texas – western Louisiana to Galveston Bay	12.8
+"Texas – Lagoons, Galveston Bay to Matagorda Island"	12.5
+"Texas – Shelf, Galveston Bay to Matagorda Is."	9.4
+"Texas – Lagoons, Matagorda Island to US/Mexico border"	15.9
+"Texas – Shelf, Matagorda Island to US/Mexico border"	8.2
+California - Southern California from Morro Bay south to US/Mexico border	8.1
+California - Monterey Bay to Morro Bay	8
+California - San Francisco Bay Vicinity	10.1
+Oregon/ California – Punta Gorda to Cape Blanco	13.1
+Oregon - Central Oregon	19.4
+Washington/Oregon - Columbia River and Southern Washington	22.6
+Washington – Strait of Juan de Fuca	14
+Washington - Puget Sound	9.7
+Puerto Rico and U.S Virgin Islands (uses PRVD02 and VIVD09 instead of NAVD88)	11.8

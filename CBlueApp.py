@@ -97,6 +97,9 @@ class CBlueApp(tk.Tk):
         self.config_file = 'cblue_configuration.json'
         self.load_config()  # sets controller_configuration variables
 
+        def quit():
+            sys.exit()
+
         # show splash screen
         self.withdraw()
         splash = Splash(self)
