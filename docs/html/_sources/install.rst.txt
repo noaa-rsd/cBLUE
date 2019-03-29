@@ -3,7 +3,7 @@ Installation
 
 The latest release of cBLUE can be found at https://github.com/forkozi/cBLUE/releases.
 
-cBLUE is designed to run on 64-bit Python 2.7.  Support for Python 3 is deferred to future versions.  
+cBLUE is designed to run on 64-bit Python 3.  
 
 cBLUE is currently provided as a collection of Python modules (.py files) and supporting text files.  The cBLUE GUI is accessed by running the CBlueApp.py file via the command line or a Python IDE. 
 

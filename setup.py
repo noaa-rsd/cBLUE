@@ -9,14 +9,16 @@ __version__ = 'v2.1.0-rc1'
 if sys.platform == "win32":
     base = "Win32GUI"
 
-include_files = [r'C:\Users\Nick.Forfinski-Sarko\AppData\Local\Continuum\miniconda3_32bit\pkgs\sqlite-3.26.0-h0c8e037_0\Library\bin\sqlite3.dll',
-                 'cBLUE_ASCII.txt',
+include_files = ['cBLUE_ASCII.txt',
                  'cBLUE_ASCII_finished.txt',
                  'cblue_configuration.json',
                  'cBLUE_icon.ico',
                  'cBLUE_readme.gif',
-                 'cBLUE_splash.gif'
-                 ]
+                 'cBLUE_splash.gif']
+
+dll_dir = r'..\DLLs'
+for dll in os.listdir(dll_dir):
+    include_files.append(os.path.join(dll_dir, dll))
 
 excludes = []
 includes = ['numpy.core._methods']
@@ -33,5 +35,5 @@ setup(
     'excludes': excludes,
     'include_msvcr': True,
     }},
-    executables = [Executable('cBLUEApp.py', base=base)]
+    executables = [Executable('cBLUEApp.py')]
     )

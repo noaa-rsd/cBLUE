@@ -1,5 +1,5 @@
-cBLUE_GITHUB
-============
+Source Code Documentation
+=========================
 
 .. toctree::
    :maxdepth: 4
@@ -8,8 +8,11 @@ cBLUE_GITHUB
    Datum
    GuiSupport
    Las
-   Merge
    Sbet
+   Merge
    Subaerial
    Subaqueous
    Tpu
+
+* :ref:`genindex`
+* :ref:`modindex`	

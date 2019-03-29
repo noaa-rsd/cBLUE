@@ -42,6 +42,7 @@ import json
 import webbrowser
 import laspy
 import cProfile
+import pathos
 
 
 now = datetime.datetime.now()
@@ -571,6 +572,7 @@ class ControllerPanel(ttk.Frame):
 
 
 if __name__ == "__main__":
+    pathos.helpers.freeze_support()
     app = CBlueApp()
     app.geometry('225x515')
     app.mainloop()

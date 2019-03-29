@@ -1,130 +1,177 @@
 
 
-<!doctype html>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE) &mdash; cBLUE v2.1.0-rc1 documentation</title>
+  
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE) &#8212; cBLUE v2.0.3 (pre-release) documentation</title>
-    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
     
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/bizstyle.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview" href="intro.html" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
-    <![endif]-->
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="intro.html" title="Overview"
-             accesskey="N">next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">cBLUE v2.0.3 (pre-release) documentation</a> &#187;</li> 
-      </ul>
-    </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Next topic</h4>
-  <p class="topless"><a href="intro.html"
-                        title="next chapter">Overview</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
+    <link rel="next" title="Overview" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> cBLUE
+          
+
+          
+            
+            <img src="_static/cBLUE_sphinx_logo.gif" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v2.1.0-rc1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Operational Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output.html">Output Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Source Code Documentation</a></li>
+</ul>
+
+            
+          
         </div>
       </div>
+    </nav>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">cBLUE</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
             
-  <img alt="_images/cBLUE_splash.gif" src="_images/cBLUE_splash.gif" />
-<div class="section" id="comprehensive-bathymetric-lidar-uncertainty-estimator-cblue">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="comprehensive-bathymetric-lidar-uncertainty-estimator-cblue">
 <h1>comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE)<a class="headerlink" href="#comprehensive-bathymetric-lidar-uncertainty-estimator-cblue" title="Permalink to this headline">¶</a></h1>
 <p>cBLUE is a tool to calculate the total propagated uncertainty of bathymetric lidar data.  Currently, the tool only supports the Riegl VQ-880-G system, but development plans include adding support for Leica’s Chiroptera series.  The theoretical foundation for cBLUE is documented in Eren et al. (in press).</p>
 <p>cBLUE is a collaboration among the <a class="reference external" href="https://www.ngs.noaa.gov/RSD/rsd_home.shtml">Remote Sensing Division</a> within <a class="reference external" href="https://www.ngs.noaa.gov">NOAA’s National Geodetic Survey</a> and researchers within the School of Construction and Civil Engineering at Oregon State University (<a class="reference external" href="http://research.engr.oregonstate.edu/parrish/">Parrish Research Group</a>) and the Center for Coastal and Ocean Mapping/Joint Hydrographic Center (<a class="reference external" href="http://ccom.unh.edu/about-ccomjhc">CCOM/JHC</a>) at the University of New Hampshire.</p>
-<div class="sidebar">
-<p class="first sidebar-title">cBLUE GUI</p>
-<img alt="_images/GUI.png" class="last" src="_images/GUI.png" />
-</div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="subaer.html">Subaerial Component</a></li>
-<li class="toctree-l2"><a class="reference internal" href="subaque.html">Subaqueous Component</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#algorithm-workflow">Algorithm Workflow</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#cblue-files">cBLUE Files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#dependencies">Dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#starting-the-gui">Starting the GUI</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI Components</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gui.html#menu-bar">Menu bar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gui.html#data-directories">Data Directories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gui.html#environmental-parameters">Environmental Parameters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="gui.html#water-surface">Water Surface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="gui.html#turbidity">Turbidity</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="gui.html#vdatum-region">VDatum Region</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gui.html#process-buttons">Process Buttons</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="workflow.html">Operational Workflow</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="workflow.html#specify-settings">1. Specify Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="workflow.html#data-directories">Data Directories</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workflow.html#environmental-parameters">Environmental Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workflow.html#vdatum-region">VDatum Region</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workflow.html#configuration-file-settings">Configuration File Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="workflow.html#load-trajectory-file-s">2. Load Trajectory File(s)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="workflow.html#process-tpu">3. Process TPU</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="output.html">Output Files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="output.html#las-file-las">LAS File (.las)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="output.html#metadata-file-json">Metadata File (.json)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="output.html#cblue-log">cBLUE log</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui.html">GUI Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workflow.html">Operational Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output.html">Output Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Source Code Documentation</a></li>
 </ul>
 </div>
 <p class="rubric">References</p>
@@ -134,29 +181,50 @@
 </div>
 
 
+           </div>
+           
           </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="intro.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, CCOM/JHC UNH, OSU, NOAA Remote Sensing Division
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="intro.html" title="Overview"
-             >next</a> |</li>
-        <li class="nav-item nav-item-0"><a href="#">cBLUE v2.0.3 (pre-release) documentation</a> &#187;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2019, CCOM/JHC UNH, OSU, NOAA Remote Sensing Division.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
-    </div>
-  </body>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>

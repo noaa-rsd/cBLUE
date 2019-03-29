@@ -8,7 +8,7 @@
     "RIEGL": "./lookup_tables/Riegl_look_up_fit_HG0995_1sig.csv",
     "ECKV": "./lookup_tables/ECKV_LUT_HG0995_1sig.csv"
   },
-  "multiprocess": true,
+  "multiprocess": false,
   "number_cores": 4,
   "cBLUE_version": "v2.0.4 (pre-release)",
   "sensor_model": "Riegl VQ-880-G",

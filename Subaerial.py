@@ -70,16 +70,7 @@ class SensorModel:
         describing the assumed scan pattern, which is an approximation of the
         manufacturer's proprietary scan pattern.
 
-        Reference: (http://docs.sympy.org/latest/modules/utilities/lambdify.html)
-
-        .. math::
-
-            \\begin{align*}
-            R1 &= \\left[\\begin{matrix}1 & 0 & 0\\\\0 & \\cos{\\left (r \\right )} & - \\sin{\\left (r \\right )}\\\\0 & \\sin{\\left (r \\right )} & \\cos{\\left (r \\right )}\\end{matrix}\\right] \\\\
-            R2 &= \\left[\\begin{matrix}\\cos{\\left (p \\right )} & 0 & \\sin{\\left (p \\right )}\\\\0 & 1 & 0\\\\- \\sin{\\left (p \\right )} & 0 & \\cos{\\left (p \\right )}\\end{matrix}\\right] \\\\
-            R3 &= \\left[\\begin{matrix}\\cos{\\left (h \\right )} & - \\sin{\\left (h \\right )} & 0\\\\\\sin{\\left (h \\right )} & \\cos{\\left (h \\right )} & 0\\\\0 & 0 & 1\\end{matrix}\\right] \\\\
-            R &= R3*R2*R1 = \\left[\\begin{matrix}\\cos{\\left (h \\right )} \\cos{\\left (p \\right )} & - \\sin{\\left (h \\right )} \\cos{\\left (r \\right )} + \\sin{\\left (p \\right )} \\sin{\\left (r \\right )} \\cos{\\left (h \\right )} & \\sin{\\left (h \\right )} \\sin{\\left (r \\right )} + \\sin{\\left (p \\right )} \\cos{\\left (h \\right )} \\cos{\\left (r \\right )}\\\\\\sin{\\left (h \\right )} \\cos{\\left (p \\right )} & \\sin{\\left (h \\right )} \\sin{\\left (p \\right )} \\sin{\\left (r \\right )} + \\cos{\\left (h \\right )} \\cos{\\left (r \\right )} & \\sin{\\left (h \\right )} \\sin{\\left (p \\right )} \\cos{\\left (r \\right )} - \\sin{\\left (r \\right )} \\cos{\\left (h \\right )}\\\\- \\sin{\\left (p \\right )} & \\sin{\\left (r \\right )} \\cos{\\left (p \\right )} & \\cos{\\left (p \\right )} \\cos{\\left (r \\right )}\\end{matrix}\\right]
-            \\end{align*}
+        .. image:: ../images/eq_AirplaneRotationMatrix.png
 
         :return: Matrix
         :return: List[lambdify functions]
@@ -126,13 +117,7 @@ class SensorModel:
         a: the rotation in the YZ plane
         b: the rotation in the XZ plane
 
-        .. math::
-
-            \\begin{align*}
-            M1 &= \\left[\\begin{matrix}1 & 0 & 0\\\\0 & \\cos{\\left (a \\right )} & - \\sin{\\left (a \\right )}\\\\0 & \\sin{\\left (a \\right )} & \\cos{\\left (a \\right )}\\end{matrix}\\right] \\\\
-            M2 &= \\left[\\begin{matrix}\\cos{\\left (b \\right )} & 0 & \\sin{\\left (b \\right )}\\\\0 & 1 & 0\\\\- \\sin{\\left (b \\right )} & 0 & \\cos{\\left (b \\right )}\\end{matrix}\\right] \\\\
-            M &= M2*M1 = \\left[\\begin{matrix}\\cos{\\left (b \\right )} & \\sin{\\left (a \\right )} \\sin{\\left (b \\right )} & \\sin{\\left (b \\right )} \\cos{\\left (a \\right )}\\\\0 & \\cos{\\left (a \\right )} & - \\sin{\\left (a \\right )}\\\\- \\sin{\\left (b \\right )} & \\sin{\\left (a \\right )} \\cos{\\left (b \\right )} & \\cos{\\left (a \\right )} \\cos{\\left (b \\right )}\\end{matrix}\\right]
-            \\end{align*}
+        .. image:: ../images/eq_SensorRotationMatrix.png
 
         :return Matrix M: the scanning sensor rotation matrix
         """
