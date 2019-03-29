@@ -26,7 +26,7 @@ packages = []
 
 setup(
     name = 'cBLUE',
-    description='NOAA Remote Sensing Division Bathymetric Lidar TPU Tool',
+    description='NOAA RSD TPU Tool',
     version=__version__,
     options = {'build_exe': {
     'packages': packages,

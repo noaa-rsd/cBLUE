@@ -1,7 +1,7 @@
 comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE)
 =============================================================
 
-cBLUE is a tool to calculate the total propagated uncertainty of bathymetric lidar data.  Currently, the tool only supports the Riegl VQ-880-G system, but development plans include adding support for Leica's Chiroptera series.  The theoretical foundation for cBLUE is documented in Eren et al. (in press).
+cBLUE is a tool to calculate the total propagated uncertainty of bathymetric lidar data.  Currently, the tool only supports the Riegl VQ-880-G system, but development plans include adding support for other lidar systems.  The theoretical foundation for cBLUE is documented in Eren et al. (in press).
 
 cBLUE is a collaboration among the `Remote Sensing Division`_ within `NOAA's National Geodetic Survey`_ and researchers within the School of Construction and Civil Engineering at Oregon State University (`Parrish Research Group`_) and the Center for Coastal and Ocean Mapping/Joint Hydrographic Center (`CCOM/JHC`_) at the University of New Hampshire. 
 
@@ -22,7 +22,13 @@ cBLUE is a collaboration among the `Remote Sensing Division`_ within `NOAA's Nat
 	workflow
 	output
 	license
-	modules
+	repo_management
+	
+Source Code Documentation
+-------------------------
+   
+* :ref:`genindex`
+* :ref:`modindex`	
 	
 .. rubric:: References	
 
