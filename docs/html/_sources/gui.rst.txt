@@ -16,7 +16,7 @@ The menu bar has the following categories.
 	
 	File, Save Settings, Saves specified directories to a Json file
 	.., Exit, Closes cBLUE		
-	Sensor Model, Riegl VQ-880-G, "Currently, this is only a dummy menu option.  The senor model configuration for the Reigl VQ-880-G is hard-coded into cBLUE.  Development plans include refactoring the code to read sensor model information from a separate file and extending support to other lidar systems, including Leica Chiroptera 4X."
+	Sensor Model, Riegl VQ-880-G, "Currently, this is only a dummy menu option.  The senor model configuration for the Reigl VQ-880-G is hard-coded into cBLUE.  Development plans include refactoring the code to read sensor model information from a separate file and extending support to other lidar systems."
 	Help, Documentation, Opens the cBLUE documentation in a web browser
 	.., About, Displays the cBLUE splash screen
 

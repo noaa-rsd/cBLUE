@@ -14,7 +14,8 @@ include_files = ['cBLUE_ASCII.txt',
                  'cblue_configuration.json',
                  'cBLUE_icon.ico',
                  'cBLUE_readme.gif',
-                 'cBLUE_splash.gif']
+                 'cBLUE_splash.gif',
+                 'lookup_tables']
 
 dll_dir = r'..\DLLs'
 for dll in os.listdir(dll_dir):

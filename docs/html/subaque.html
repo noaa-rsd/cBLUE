@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation" href="install.html" />
@@ -89,9 +90,9 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="intro.html">Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="algorithm_overview.html">Algorithm Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="subaer.html">Subaerial Component</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Subaqueous Component</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro.html#algorithm-workflow">Algorithm Workflow</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
@@ -99,6 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="workflow.html">Operational Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="output.html">Output Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repo_management.html">Repository Management</a></li>
 </ul>
 
             
@@ -152,8 +154,6 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/subaque.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
     
@@ -166,7 +166,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="subaqueous-component">
-<h1>Subaqueous Component<a class="headerlink" href="#subaqueous-component" title="Permalink to this headline">¶</a></h1>
+<span id="subaqu-label"></span><h1>Subaqueous Component<a class="headerlink" href="#subaqueous-component" title="Permalink to this headline">¶</a></h1>
 <p>The subaqueous component stochastically computes the TPU of the laser pulse on the seafloor using Monte Carlo ray tracing based on surface modeling and estimates of scattering and absorption (see the figure below).  To minimize the computational complexity of performing Monte Carlo simmulations for large numbers of data points (&gt; 1 billion), the algorithm relies on pre-computed coefficient lookup tables.</p>
 <p>The figure below illustrates the general concept of the subaqueous TPU calculations.  Given assumed sea state (and turbidity) conditions, large numbers of light rays are propagated, or traced, through the water column.  The spread of the resulting distribution of depths provides an estimate of uncertainty.</p>
 <p>Please refer to the <a class="reference external" href="../html/_static/MonteCarlomanual.pdf">cBLUE Monte Carlo Manual</a> for detailed information about the subaqueous Monte Carlo simulations and corresponding lookup tables.</p>

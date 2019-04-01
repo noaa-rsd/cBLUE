@@ -1,3 +1,5 @@
+.. _subaer-label:
+
 Subaerial Component
 *******************
 The subaerial component analytically computes the TPU of the laser pulse at the water surface using the equations shown below.  The calculations include polynomial surface fitting to model the differences between the proprietary scan pattern and the implemented scan pattern.  

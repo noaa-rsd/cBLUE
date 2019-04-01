@@ -33,9 +33,10 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Subaerial Component" href="subaer.html" />
+    <link rel="next" title="Algorithm Workflow" href="algorithm_overview.html" />
     <link rel="prev" title="comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE)" href="index.html" /> 
 </head>
 
@@ -89,9 +90,9 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="algorithm_overview.html">Algorithm Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="subaer.html">Subaerial Component</a></li>
 <li class="toctree-l2"><a class="reference internal" href="subaque.html">Subaqueous Component</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#algorithm-workflow">Algorithm Workflow</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
@@ -99,6 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="workflow.html">Operational Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="output.html">Output Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repo_management.html">Repository Management</a></li>
 </ul>
 
             
@@ -150,8 +152,6 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
     
@@ -170,40 +170,13 @@
 <p>This tool computes the vertical total propagated uncertainty (TPU) of bathymetry acquired with a Riegl VQ-880-G topobathymetric lidar (other lidar systems will be included in future versions).  The algorithm consists of subaerial and subaqueous components (see the figure below).  Each component lends itself to a different approach to uncertainty propagation because of the relative complexity of the factors influencing the laser pulse travel path.  Whereas the subaerial portion is a well-defined geometric problem that can be addressed using standard geomatics techniques, the subaqueous portion uses a Monte Carlo approach  to model the complex interactions of light with water that are difficult to model analytically.</p>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="algorithm_overview.html">Algorithm Workflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subaer.html">Subaerial Component</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subaque.html">Subaqueous Component</a></li>
 </ul>
 </div>
 <img alt="_images/GeneralApproach.png" src="_images/GeneralApproach.png" />
 <p>Image Credit: Chris Parrish</p>
-<div class="section" id="algorithm-workflow">
-<h2>Algorithm Workflow<a class="headerlink" href="#algorithm-workflow" title="Permalink to this headline">¶</a></h2>
-<p>The cBLUE algorithm workflow consists of three main steps:</p>
-<ol class="arabic">
-<li><p class="first">Form Sensor Model Observation Equation</p>
-<blockquote>
-<div><p>A laser geolocation equation is formed based on characteristics of the specified lidar sensor model.  The symbolic math library <em>SymPy</em> (<a class="reference external" href="https://www.sympy.org/en/index.html">https://www.sympy.org/en/index.html</a>) is used to construct the laser geolocation equation from specified laser and airplane rotation matrices.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Generate Jacobian</p>
-<blockquote>
-<div><p>The general equation of the Jacobian, or the matrix of partial derivatives, of the laser geolocation equation is calculated using SymPy.</p>
-</div></blockquote>
-</li>
-<li><p class="first">Propagate Uncertainty</p>
-<blockquote>
-<div><p>Once the general equation of the Jacobian is calculated, the uncertainties of the component variables are propagated for each data point, per flight line, per Las tile, using the following steps:</p>
-<ul class="simple">
-<li>Merge the Las data and trajectory data (Merge class)</li>
-<li>Calculate subaerial THU and TVU (Subaerial class)</li>
-<li>Calculate subaqueous THU and TVU (Subaqueous class)</li>
-<li>Combine subaerial and subaqueous TPU (Tpu class)</li>
-<li>Export TPU as Las extra bytes (Tpu Class)</li>
-</ul>
-</div></blockquote>
-</li>
-</ol>
-</div>
 </div>
 
 
@@ -214,7 +187,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="subaer.html" class="btn btn-neutral float-right" title="Subaerial Component" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="algorithm_overview.html" class="btn btn-neutral float-right" title="Algorithm Workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="comprehensive Bathymetric Lidar Uncertainty Estimator (cBLUE)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

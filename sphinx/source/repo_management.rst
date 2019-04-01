@@ -1,7 +1,9 @@
 Repository Management
 =====================
 
-This section contains documentation of NOAA Remote Sensing Division (RSD) cBLUE repository-management practices.
+This section contains NOAA Remote Sensing Division (RSD) best practices and standard operating procedures (SOPs) for the `cBLUE GitHub repository`_.
+
+.. _`cBLUE GitHub repository`: https://github.com/forkozi/cBLUE
 
 .. toctree:: 
 	:maxdepth: 1
