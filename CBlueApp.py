@@ -54,8 +54,9 @@ log_file = 'cBLUE_{}{}{}_{}{}{}.log'.format(now.year,
                                             str(now.minute).zfill(2),
                                             str(now.second).zfill(2))
 
-#logging.basicConfig(format='%(asctime)s:%(message)s', 
-#                    level=logging.DEBUG)
+logging.basicConfig(filename=log_file,
+                    format='%(asctime)s:%(message)s', 
+                    level=logging.DEBUG)
 
 from Subaerial import SensorModel, Jacobian
 from GuiSupport import DirectorySelectButton, RadioFrame
@@ -266,6 +267,9 @@ class ControllerPanel(ttk.Frame):
         self.sbet = None
         self.parent = parent
         self.controller = controller
+
+        # Default region is no region
+        self.mcu = 0
 
         #  Build the control panel
         self.control_panel_width = 30

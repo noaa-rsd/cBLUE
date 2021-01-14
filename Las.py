@@ -101,7 +101,13 @@ class Las:
         X = self.points_to_process['X']
         Y = self.points_to_process['Y']
         Z = self.points_to_process['Z']
-        c = self.points_to_process['raw_classification']
+
+        if 'raw_classification' in self.points_to_process.dtype.names:
+            c = self.points_to_process['raw_classification']
+        elif 'classification_byte' in self.points_to_process.dtype.names:
+            c = self.points_to_process['classification_byte']
+        else:
+            raise Exception("Unknown las version or missing classification attribute.")
 
         x = ne.evaluate("X * scale_x + offset_x")
         y = ne.evaluate("Y * scale_y + offset_y")

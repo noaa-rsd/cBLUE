@@ -1,0 +1,26 @@
+{
+  "Reigl VQ-880-G": {
+    "sensor_model": {
+      "sensor_type": "cBLUE (generic with polynomial error correction)",
+      "a_std_dev": 0.02,
+      "b_std_dev": 0.02,
+      "std_rho": 0.025
+    },
+    "subaqueous_LUTs": {
+      "RIEGL": "./lookup_tables/Riegl_look_up_fit_HG0995_1sig.csv",
+      "ECKV": "./lookup_tables/ECKV_LUT_HG0995_1sig.csv"
+    }
+  },
+  "Leica Chiroptera 4X": {
+    "sensor_model": {
+      "sensor_type": "cBLUE (generic with polynomial error correction)",
+      "a_std_dev": 0.02,
+      "b_std_dev": 0.02,
+      "std_rho": 0.025
+    },
+    "subaqueous_LUTs": {
+      "RIEGL": "",
+      "ECKV": ""
+    }
+  }
+}
